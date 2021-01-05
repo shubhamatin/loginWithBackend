@@ -1,0 +1,19 @@
+{
+  "name": "login-screen",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "login screen data fetching ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/index.js",
+    "client": "cd frontend && npm  start",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1"
+  }
+}
